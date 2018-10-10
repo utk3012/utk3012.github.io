@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,11 +20,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/devicons/css/devicons.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      
+      <script type="text/javascript" src="js/typed.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
       <script>
@@ -38,18 +40,19 @@
           });
       </script>
       <style>
-          .proImg {
+          .proImgSpan {
               display: none;
           }
           @media only screen and (max-width: 900px) {
               .proImg {
                   display: flex;
                   max-width: 50vw;
+                  max-height: 50vw;
                   padding: 2px;
                   border: 2px solid grey;
               }
               .proImgSpan {
-                  /*margin-top: 10vh;*/
+                  display: flex;
               }
               .name {
                   text-align: center;
@@ -90,6 +93,9 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
           <li class="nav-item">
@@ -105,18 +111,15 @@
             <h1 class="mb-0 name">Utkarsh
             <span class="text-primary">Raj</span>
           </h1>
-          <!--<div class="subheading mb-5">Manipal · Karnataka, India 576104 ·-->
-            <!--<a href="mailto:name@email.com">utkarsh3012@gmail.com</a>-->
-          <!--</div>-->
             <div class="subheading mb-5 typ">
                 <span class="creative" style="padding-left: 10px;"></span><span class="typed-cursor"></span>
             </div>
 
-          <p class="mb-5">Hello World! I am a second year Computer and Communication Engineering undergrad at Manipal Institute of Technology.
+          <p class="mb-5">Hey there! I am a third year Computer and Communication Engineering undergrad at Manipal Institute of Technology.
               I'm a self-trained Stack Developer, with proficiency in Single Page Web App
               Development and good experience in developing RESTful APIs using NodeJS.</p>
           <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
+            <li class="list-inline-item fb">
               <a href="https://www.facebook.com/utkarsh3012" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -124,15 +127,15 @@
                 </span>
               </a>
             </li>
-            <li class="list-inline-item">
-              <a href="#">
+            <li class="list-inline-item twitt">
+              <a href="https://twitter.com/utk3012" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item linkin">
               <a href="#">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -140,7 +143,7 @@
                 </span>
               </a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item github">
               <a href="https://github.com/utk3012" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -161,7 +164,7 @@
               <h3 class="mb-0">Manipal Institute Of Technology</h3>
               <div class="subheading mb-3">Manipal · Karnataka · India </div>
               <div>Computer and Communication Engineering</div>
-               <p>CGPA: 8.27</p>
+               <p>CGPA: 7.98</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2016 - May 2020</span>
@@ -172,7 +175,7 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">St. Joseph's High School</h3>
               <div class="subheading mb-3">Gorakhpur · Uttar Pradesh · India </div>
-               <p>Class 10(ICSE): 94% <br> Class 12(ISC): 91.6%</p>
+               <p>Class 10(ICSE): 92.67% <br> Class 12(ISC): 90.6%</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2002 - May 2015</span>
@@ -205,47 +208,95 @@
             <div class="subheading mb-3">Programming Languages &amp; Tools</div>
             <ul class="list-inline list-icons">
                 <li class="list-inline-item">
-                    <i class="devicons devicons-java" data-toggle="tooltip" title="Java" data-placement="bottom"></i>
+                    <i class="devicon-java-plain colored" data-toggle="tooltip" title="Java" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-html5" data-toggle="tooltip" title="HTML5" data-placement="bottom"></i>
+                  <i class="devicon-cplusplus-plain colored" data-toggle="tooltip" title="C++" data-placement="bottom"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="devicon-python-plain colored" data-toggle="tooltip" title="Python" data-placement="bottom"></i>
+            </li>
+                <li class="list-inline-item">
+                    <i class="devicon-html5-plain colored" data-toggle="tooltip" title="HTML5" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-css3" data-toggle="tooltip" title="CSS3" data-placement="bottom"></i>
+                    <i class="devicon-css3-plain colored" data-toggle="tooltip" title="CSS3" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-bootstrap" data-toggle="tooltip" title="Bootstrap" data-placement="bottom"></i>
+                    <i class="devicon-bootstrap-plain colored" data-toggle="tooltip" title="Bootstrap" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-javascript" data-toggle="tooltip" title="JavaScript" data-placement="bottom"></i>
+                    <i class="devicon-javascript-plain colored" data-toggle="tooltip" title="JavaScript" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-angular" data-toggle="tooltip" title="Angular" data-placement="bottom"></i>
+                    <i class="devicon-angularjs-plain colored" data-toggle="tooltip" title="Angular" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-nodejs" data-toggle="tooltip" title="NodeJS" data-placement="bottom"></i>
+                    <i class="devicon-nodejs-plain colored" data-toggle="tooltip" title="NodeJS" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-mongodb" data-toggle="tooltip" title="MongoDB" data-placement="bottom"></i>
+                    <i class="devicon-mongodb-plain colored" data-toggle="tooltip" title="MongoDB" data-placement="bottom"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="devicons devicons-ionic" data-toggle="tooltip" title="Ionic" data-placement="bottom"></i>
-                </li>
-                <li class="list-inline-item">
-                    <i class="devicons devicons-python" data-toggle="tooltip" title="Python" data-placement="bottom"></i>
+                    <i class="devicons devicons-ionic" data-toggle="tooltip" title="Ionic" data-placement="bottom" style="color:#4e8ef7; font-size:110%"></i>
                 </li>
             </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Work Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Software Developer</h3>
+              <div class="subheading mb-3">Altered Carbon Technologies Pvt. Ltd.</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">March 2018 - July 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Summer Intern (Web Development)</h3>
+              <div class="subheading mb-3">Qwick App AB</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2018 - March 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Thrust MIT</h3>
+              <div class="subheading mb-3">Task Phase</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2017 - September 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Core Committee Member</h3>
+              <div class="subheading mb-3">LUGM (Linux Users’ Group, Manipal)</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2018 - Present</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p> -->
 
-          <p>I spend a large amount of my free time exploring the latest tech releases. I am an avid reader.</p>
-          <p class="mb-0">I follow a number of sci-fi and fantasy genre movies and television shows. I love watching football. </p>
+          <p>Apart from being a developer, I enjoy most of my time being outdoors. Playing and watching football top the list of my liesure time activities.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, and I spend a large amount of my free time exploring the latest technological advancements in the front-end web development world. </p>
         </div>
       </section>
 
@@ -268,12 +319,11 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script type="text/javascript" src="js/typed.js"></script>
     <script src="js/resume.min.js"></script>
     <script>
-		$(document).ready(function(){
-		    $('[data-toggle="tooltip"]').tooltip();
-		});
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
   </body>
 
